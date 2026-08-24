@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      ellipse 55vw 35vh at 8% 0%,
+      rgba(84, 190, 150, 0.18) 0%,
+      rgba(84, 190, 150, 0.08) 40%,
+      transparent 75%
+    ),
+    radial-gradient(
+      ellipse 45vw 30vh at 95% 5%,
+      rgba(82, 189, 170, 0.14) 0%,
+      rgba(82, 189, 170, 0.06) 45%,
+      transparent 75%
+    ),
+    radial-gradient(
+      ellipse 60vw 45vh at 30% 55%,
+      rgba(255, 214, 214, 0.14) 0%,
+      rgba(255, 214, 214, 0.05) 45%,
+      transparent 75%
+    ),
+    #ffffff;
+}
+
+.header_page {
+  width: 100%;
+  padding: 2.5rem 2rem;
+}
+
+.header_wrapper {
+  width: calc(100% - 4rem);
+  max-width: 1440px;
+  margin-inline: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 3.125rem;
+  color: #54bd95;
+}
+
+.header_nav {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.header_nav > a {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #a6a6a6;
+}
+
+.header_nav > a:hover {
+  color: #000;
+}
+
+.header_auth {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.header_auth > button {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.header_auth_login {
+  background: none;
+  color: #a6a6a6;
+  border: 0;
+  cursor: pointer;
+}
+
+.header_auth_signup {
+  background: #5abd95;
+  border: 0;
+  padding: 0.625rem;
+  border-radius: 0.625rem;
+  color: #fff;
+}
