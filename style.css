@@ -428,21 +428,25 @@ button {
   color: #a6a6a6;
 }
 
-.benefits {
+.benefits_plans_background {
   width: 100%;
 
   background:
     radial-gradient(
-      ellipse 40% 75% at 100% 100%,
+      ellipse 45% 45% at 95% 40%,
       rgba(84, 189, 149, 0.18),
-      transparent 75%
+      transparent 85%
     ),
     radial-gradient(
-      ellipse 40% 70% at 0% 0%,
-      rgba(255, 220, 220, 0.15),
-      transparent 75%
+      ellipse 35% 35% at 5% 15%,
+      rgba(255, 220, 225, 0.12),
+      transparent 85%
     ),
     #fff;
+}
+
+.benefits {
+  width: 100%;
 }
 
 .benefits_wrapper {
@@ -495,4 +499,235 @@ button {
   background: #54bd95;
   border-radius: 50%;
   color: #fff;
+}
+
+.plans {
+  width: 100%;
+}
+
+.plans_wrapper {
+  width: calc(100% - 4rem);
+  max-width: 90rem;
+  margin-inline: auto;
+}
+
+.plans_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  gap: 2.5rem;
+}
+
+.plans_header > h2 {
+  font-weight: 700;
+  font-size: 3.125rem;
+  color: #191a15;
+
+  & span {
+    display: block;
+  }
+}
+
+.plans_header > p {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #a6a6a6;
+}
+
+.plans_choice_period {
+  display: flex;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  gap: 2.375rem;
+  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.05);
+  padding: 7px 7px 7px 38px;
+}
+
+.plans_choice_period > button {
+  border: none;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.plans_choice_period > button:not(.plans_period_selected) {
+  background: none;
+  color: #191a15;
+}
+
+.plans_choice_period > button.plans_period_selected {
+  background: #54bd95;
+  border-radius: 10px;
+  padding: 13px 40px;
+  color: #fff;
+}
+
+.plans_options {
+  width: 100%;
+  max-width: 70rem;
+  margin: 4.188rem auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  gap: 1.875rem;
+}
+.plans_options_card {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2rem 1.25rem 1.25rem;
+  background: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.05);
+}
+
+.plans_options_card > h4 {
+  margin: 0;
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: #191a15;
+}
+
+.plans_options_card > p {
+  max-width: 13.125rem;
+  margin: 0.625rem 0 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #a6a6a6;
+  text-align: center;
+}
+
+.plans_options_card_price {
+  position: relative;
+  width: fit-content;
+  margin: 1.5rem 0 3.5rem;
+}
+
+.plans_options_card_price > span {
+  position: absolute;
+  top: -0.6rem;
+  left: -0.9rem;
+
+  font-size: 1.125rem;
+  color: #a6a6a6;
+}
+
+.plans_options_card_price > p {
+  margin: 0;
+  line-height: 1;
+  font-size: 3.125rem;
+  font-weight: 600;
+  color: #191a15;
+}
+
+.plans_options_card_body {
+  width: 100%;
+  min-height: 17rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  padding: 1.5rem 1.25rem;
+  background: #f9fafb;
+  border-radius: 0.625rem;
+}
+
+.plans_options_card_benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plans_options_card_benefits > li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+
+  font-size: 1rem;
+  font-weight: 500;
+  color: #191a15;
+}
+
+.plans_options_card_benefits > li > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-top: 0.125rem;
+
+  background: #54bd95;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  color: #fff;
+}
+
+.plans_options_card_body > button {
+  width: 100%;
+  margin-top: auto;
+  padding: 1rem;
+
+  border: none;
+  border-radius: 0.625rem;
+  background: #fff;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.05);
+
+  font-size: 1rem;
+  font-weight: 600;
+  color: #54bd95;
+}
+
+.plans_options_card_selected {
+  background: #54bd95;
+  padding-top: 3rem;
+  padding-bottom: 2.25rem;
+}
+
+.plans_options_card_selected > h4,
+.plans_options_card_selected > p {
+  color: #fff;
+}
+
+.plans_options_card_selected .plans_options_card_price {
+  margin-bottom: 1rem;
+}
+
+.plans_options_card_selected .plans_options_card_price > span,
+.plans_options_card_selected .plans_options_card_price > p {
+  color: #fff;
+}
+
+.plans_options_card_discount {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.375rem 0.75rem;
+
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.plans_options_card_selected .plans_options_card_body {
+  background: #fff;
+}
+
+.plans_options_card_selected .plans_options_card_body > button {
+  background: #54bd95;
+  color: #fff;
+  box-shadow: none;
 }
