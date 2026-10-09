@@ -106,7 +106,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 8.125rem;
-  
 }
 
 .hero {
@@ -238,7 +237,7 @@ button {
 
 .support {
   width: 100%;
-  background: #F9F8FE;
+  background: #f9f8fe;
   margin-bottom: 8.125rem;
 }
 
@@ -252,11 +251,9 @@ button {
   gap: 2rem;
 }
 
-
 .support_info {
   flex: 1;
 }
-
 
 .support_header {
   width: 100%;
@@ -300,7 +297,7 @@ button {
 
 .rating-card_details > p {
   font-size: 1.125rem;
-  color: #191A15;
+  color: #191a15;
   font-weight: 500;
 
   & strong {
@@ -311,7 +308,7 @@ button {
 .rating-card_brand {
   font-weight: 700;
   font-size: 1.125rem;
-  color: #A6A6A6;
+  color: #a6a6a6;
 }
 
 .support_list {
@@ -349,12 +346,86 @@ button {
 .support-item_text > h3 {
   font-weight: 700;
   font-size: 1.7rem;
-  color: #191A15;
+  color: #191a15;
 }
 
 .support-item_text > p {
   margin-top: 0.625rem;
   font-size: 1.125rem;
   font-weight: 500;
-  color: #A6A6A6;
+  color: #a6a6a6;
+}
+
+.features {
+  width: calc(100% - 4rem);
+  max-width: 90rem;
+  margin-inline: auto;
+  margin-bottom: 8.125rem;
+}
+
+.features_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4.625rem;
+}
+
+.features_header > h2 {
+  flex: 0 1 25%;
+  font-size: 3.125rem;
+  font-weight: 600;
+  color: #191a15;
+}
+
+.features_header > p {
+  flex: 0 1 32%;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #a6a6a6;
+}
+
+.features_header > button {
+  flex-shrink: 0;
+  white-space: nowrap;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.125rem;
+  background: #54bd95;
+  border: none;
+  border-radius: 70px;
+  padding: 1.125rem 2rem;
+}
+
+.features_cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.75rem;
+}
+
+.features_card {
+  width: 100%;
+}
+
+.features_card_content > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.features_card_content > div {
+  margin-top: 1.875rem;
+}
+
+.features_card_content > div > h4 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: #191a15;
+  margin-bottom: 1.25rem;
+}
+
+.features_card_content > div > p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #a6a6a6;
 }
