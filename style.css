@@ -40,6 +40,7 @@ button {
 .header_page {
   width: 100%;
   padding-top: 2.5rem;
+  margin-bottom: 8.125rem;
 }
 
 .header_wrapper {
@@ -102,14 +103,16 @@ button {
 }
 
 .main_content {
-  width: calc(100% - 4rem);
-  max-width: 90rem;
-  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8.125rem;
+  
 }
 
 .hero {
-  width: 100%;
-  margin: 8.125rem 0;
+  width: calc(100% - 4rem);
+  max-width: 90rem;
+  margin-inline: auto;
 }
 
 .hero_wrapper {
@@ -208,13 +211,13 @@ button {
 
 .hero_partners_list {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  display: flex;
+  justify-content: space-between;
 
   justify-items: center;
   align-items: center;
 
-  gap: clamp(0.75rem, 3vw, 3.125rem);
+  gap: 3.375rem;
   list-style: none;
 }
 
@@ -231,4 +234,127 @@ button {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.support {
+  width: 100%;
+  background: #F9F8FE;
+  margin-bottom: 8.125rem;
+}
+
+.support_wrapper {
+  width: calc(100% - 4rem);
+  max-width: 90rem;
+  margin: 3.7rem auto;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+
+.support_info {
+  flex: 1;
+}
+
+
+.support_header {
+  width: 100%;
+
+  > h2 {
+    font-size: 3.125rem;
+    font-weight: 700;
+    color: #191a15;
+    margin-bottom: 1.875rem;
+  }
+
+  > p {
+    font-size: 1rem;
+    color: #a6a6a6;
+    font-weight: 500;
+    margin-bottom: 4.5rem;
+  }
+}
+
+.support_ratings {
+  display: flex;
+  gap: 5rem;
+}
+
+.rating-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+
+.rating-card_stars {
+  display: flex;
+  gap: 0.188rem;
+}
+
+.rating-card_details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+
+.rating-card_details > p {
+  font-size: 1.125rem;
+  color: #191A15;
+  font-weight: 500;
+
+  & strong {
+    font-weight: 700;
+  }
+}
+
+.rating-card_brand {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #A6A6A6;
+}
+
+.support_list {
+  flex: 1;
+}
+
+.support_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.support-item {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.support-item_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 0.938rem;
+}
+
+.support-item_icon > img {
+  width: 30px;
+  height: 30px;
+}
+
+.support-item_text > h3 {
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: #191A15;
+}
+
+.support-item_text > p {
+  margin-top: 0.625rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #A6A6A6;
 }
