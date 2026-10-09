@@ -238,7 +238,6 @@ button {
 .support {
   width: 100%;
   background: #f9f8fe;
-  margin-bottom: 8.125rem;
 }
 
 .support_wrapper {
@@ -360,7 +359,6 @@ button {
   width: calc(100% - 4rem);
   max-width: 90rem;
   margin-inline: auto;
-  margin-bottom: 8.125rem;
 }
 
 .features_header {
@@ -428,4 +426,73 @@ button {
   font-size: 1.25rem;
   font-weight: 500;
   color: #a6a6a6;
+}
+
+.benefits {
+  width: 100%;
+
+  background:
+    radial-gradient(
+      ellipse 40% 75% at 100% 100%,
+      rgba(84, 189, 149, 0.18),
+      transparent 75%
+    ),
+    radial-gradient(
+      ellipse 40% 70% at 0% 0%,
+      rgba(255, 220, 220, 0.15),
+      transparent 75%
+    ),
+    #fff;
+}
+
+.benefits_wrapper {
+  width: calc(100% - 4rem);
+  max-width: 90rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+
+  gap: 8.438rem;
+}
+
+.benefits_about {
+  flex: 1;
+}
+
+.benefits_about > h2 {
+  max-width: 27rem;
+  margin-bottom: 3.125rem;
+  font-size: 3.125rem;
+  font-weight: 700;
+  color: #191a15;
+}
+
+.benefits_about_list {
+  display: flex;
+  gap: 1.875rem;
+  flex-direction: column;
+}
+
+.benefits_about_list > li {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  list-style: none;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #191a15;
+}
+
+.benefits_about_list > li > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  background: #54bd95;
+  border-radius: 50%;
+  color: #fff;
 }
